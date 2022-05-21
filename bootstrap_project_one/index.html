@@ -4,12 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <!-- bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
@@ -95,11 +99,91 @@
           </button>
      </div>
       <div class="container-fluid">
+        <!-- tagline -->
         <div class="row">
           <div class="col-12">
             <h3 class="display-6 text-center mt-5 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Dolorem rerum saepe voluptates doloribus </h3>
           </div>
         </div>
+        <!-- feature -->
+        <div class="row justify-content-evenly pt-3 pb-3">
+          <div class="col-md-3 text-center mt-5">
+            <h1><i class="bi bi-file-code-fill text-primary"></i></h1>
+            <h5>Built for developers</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem rerum saepe voluptates doloribus</p>
+          </div>
+          <div class="col-md-3 text-center mt-5">
+            <h1><i class="bi bi-easel-fill text-danger"></i></h1>
+            <h5>Built for developers</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem rerum saepe voluptates doloribus</p>
+          </div>
+          <div class="col-md-3 text-center mt-5">
+            <h1><i class="bi bi-calendar-range-fill text-success"></i></h1>
+            <h5>Built for developers</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem rerum saepe voluptates doloribus</p>
+          </div>
+        </div>
+      </div>
+      <!-- horizontal line -->
+      <hr>
+
+      <!-- growth -->
+
+      <div class="row justify-content-evenly pt-3 pb-5">
+        <div class="col-md-5 pt-3">
+          <img src="./images/busnessimg.jpg" class="img-fluid" alt="">
+        </div>
+        <!-- progress bar -->
+        <div class="col-md-5 pt-3">
+          <h5 class="mt-3">Website Development</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h5 class="mt-3">App Development</h5>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h5 class="mt-3">Softwer Development</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h5 class="mt-3">SEO</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h5 class="mt-3">Marketing</h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="row justify-content-evenly pt-3 pb-5" style="background-color: #f1f1f1;">
+        <div class="col-md-5 mt-3">
+          <form>
+            <div class="mb-3">
+              <h3>Contact Form</h3>
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-5 mt-3"></div>
       </div>
 
     <h1>Hello, world!</h1>
