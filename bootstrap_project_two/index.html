@@ -128,10 +128,85 @@
           }
 
           /* services */
-          #service{
-               margin-top: 20px;
+          #service-img{
+               padding: 5%;
+               /* height: 400px; */
+          }
+          #service-text{
+               padding-top: 10%;
+               padding-bottom: 5%;
+          }
+          #service-btn{
+               color: white;
+               background-color: #fcc302;
+               border: 2px solid #fcc302;
           }
 
+          /* counter */
+          #counter{
+               background-color: #fcc302;
+               padding-top: 50px;
+               padding-bottom: 70px;
+          }
+          .counter-icon{
+               font-size: 70px;
+          }
+          @media only screen and (max-width: 450px) {
+               .counter-icon{
+                    font-size: 50px;
+               }
+          }
+
+          /* blog */
+          #blog{
+               padding:  70px 0px;
+          }
+          #blog-title{
+               font-size: 50px;
+               font-weight: bolder;
+          }
+          #blog-p{
+               font-size: 20px;
+          }
+          .blog-text-c{
+               color: #00bec9;
+               text-decoration: none;
+          }
+          @media only screen and (max-width: 450px) {
+               
+               .card-padding{
+                    margin-left: 7%;
+               }
+          }
+          /* footer */
+          #footer{
+               padding-top: 70px;
+               padding-bottom: 70px;
+          }
+          #footer-search-box{
+               background-color: #fcc302;
+               color: white;
+               padding: 7px;
+               border: 0px;
+               border-radius: 0px;
+               position: relative;
+               left: 30px;
+          }
+          #footer-submit{
+               padding: 7px;
+               padding-left: 20px;
+               padding-right: 20px;
+               position: relative;
+               z-index: 99;
+               background-color: #00bec9;
+               color: white;
+               border: 0px;
+               border-radius: 0px;
+          }
+          .solial-icons{
+               font-size: 25px;
+               padding-left: 5px;
+          }
 
      </style>
 </head>
@@ -188,18 +263,119 @@
           <!-- Service -->
 
           <div class="row justify-content-center" id="service">
-               <div class="col-md-5" id="service-text">
-                    <h1>As a vegetarian and <br> lover of plant</h1>
+               <div class="col-md-5 col-11" id="service-text">
+                    <h1>As a vegetarian and <br> lover of plants</h1>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam accusantium iusto quos magni numquam qui fuga adipisci ex hic sint dolor, deserunt, corporis recusandae, in inventore quod dicta repellendus!</p>
                     <button id="service-btn" type="button" class="btn">Our service</button>
                </div>
-               <div class="col-md-5" id="service-img">
+               <div class="col-md-5 d-none d-md-block" id="service-img">
                     <img src="./images/plantation.jpg" alt="" class="img-fluid">
                </div>
           </div>
+
+          <!-- counter -->
+          <div class="row justify-content-center" id="counter">
+               <div class="col-md-3 text-center text-white mt-5 mb-3">
+                    <i class="bi bi-heart-pulse counter-icon"></i>
+                    <h3>
+                         +78947 <br> Heart Plus
+                    </h3>
+               </div>
+               <div class="col-md-3 text-center text-white mt-5 mb-3">
+                    <i class="bi bi-activity counter-icon"></i>
+                    <h3>
+                         +78947 <br> Bi activity
+                    </h3>
+               </div>
+               <div class="col-md-3 text-center text-white mt-5 mb-3">
+                    <i class="bi bi-bandaid counter-icon"></i>
+                    <h3>
+                         +78947 <br> Bi bandaid
+                    </h3>
+               </div>
+          </div>
+
+          <!-- blog -->
+          <div class="row justify-content-center" id="blog">
+               <div class="col-12 text-center">
+                    <h1 id="blog-title">Recent Posts</h1>
+                    <p id="blog-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam, doloribus amet consectetur.</p>
+               </div>
+
+               <!-- 3 cards -->
+               <div class="col-md-3 col-11 pt-5 card-padding">
+                    <div class="card" style="width: 19rem;">
+                         <img src="./images/blog.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">As a vegetarian and lover of plants</h5>
+                           <p class="blog-text-c">FEBRUARY 17, 2021</p>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <a class="blog-text-c" href="#" >Read more...</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 col-11 pt-5 card-padding">
+                    <div class="card" style="width: 19rem;">
+                         <img src="./images/blog.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">As a vegetarian and lover of plants</h5>
+                           <p class="blog-text-c">FEBRUARY 17, 2021</p>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <a class="blog-text-c" href="#" >Read more...</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 col-11  pt-5 card-padding">
+                    <div class="card" style="width: 19rem;">
+                         <img src="./images/blog.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">As a vegetarian and lover of plants</h5>
+                           <p class="blog-text-c">FEBRUARY 17, 2021</p>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <a class="blog-text-c" href="#" >Read more...</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- footer -->
+          <div class="row bg-dark text-white  justify-content-center" id="footer">
+               <div class="col-md-3">
+                    <h4 class="pb-4 text-white">Important Links</h4>
+                    <p>
+                         <a href="#" class="link-light text-decoration-none">Home</a> <br>
+                         <a href="#" class="link-light text-decoration-none">About Us</a> <br>
+                         <a href="#" class="link-light text-decoration-none">Contact Us</a> <br>
+                         <a href="#" class="link-light text-decoration-none">More</a>
+                    </p>
+               </div>
+               <div class="col-md-2">
+                    <h4 class="pb-4 text-white">Services</h4>
+                    <p>
+                         <a href="#" class="link-light text-decoration-none">How to Order</a> <br>
+                         <a href="#" class="link-light text-decoration-none">Our Products</a> <br>
+                         <a href="#" class="link-light text-decoration-none">Order Status</a> <br>
+                         <a href="#" class="link-light text-decoration-none">Payment Method</a>
+                    </p>
+               </div>
+               <div class="col-md-4 text-end">
+                    <h4 class="pb-4 text-white">Important Links</h4>
+                    <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, veritatis.</p>
+                    <form action="">
+                         <input type="text" id="footer-search-box">
+                         <button id="footer-submit" type="submit">
+                              <i class="bi bi-cursor-fill"></i>
+                         </button>
+                    </form>
+                    <i class="bi bi-instagram solial-icons"></i>
+                    <i class="bi bi-facebook solial-icons"></i>
+                    <i class="bi bi-twitter solial-icons"></i>
+                    <i class="bi bi-whatsapp solial-icons"></i>
+               </div>
+          </div>
+          <!-- container end -->
      </div>
-     <h1>Hello, world!</h1>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
